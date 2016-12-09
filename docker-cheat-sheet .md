@@ -16,6 +16,10 @@ docker stop $(docker ps -a -q)
 ```
 docker rm $(docker ps -a -q)
 ```
+### delete image
+```
+docker rmi <image name>
+```
 
 # Docker-Compose
 ### build
