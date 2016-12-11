@@ -50,13 +50,14 @@ docker-machine regenerate-certs <machine name>
 ```
 docker-machine ls
 ```
-### swithc to machine terminal
+### switch to machine terminal
 ```
 eval "$(docker-machine env <machine name>)"
 ```
-
-
-
+### connect to existing host
+```
+docker-machine create --driver generic --generic-ip-address <ip> --generic-ssh-user <username> --generic-ssh-key <key-location> <machine-name>
+```
 
 
 
