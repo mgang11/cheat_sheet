@@ -20,6 +20,10 @@ docker rm $(docker ps -a -q)
 ```
 docker rmi <image name>
 ```
+### attach to container
+```
+docker exec -t -i <container id> /bin/bash
+```
 
 # Docker-Compose
 ### build
@@ -56,7 +60,7 @@ eval "$(docker-machine env <machine name>)"
 ```
 ### connect to existing host
 ```
-docker-machine create --driver generic --generic-ip-address <ip> --generic-ssh-user <username> --generic-ssh-key <key-location> <machine-name>
+docker-machine create --driver generic --generic-ip-address <ip> --generic-ssh-user <username> --generic-ssh-key <key-location> <machine name>
 ```
 
 
