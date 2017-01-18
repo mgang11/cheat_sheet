@@ -20,8 +20,9 @@ docker rm $(docker ps -a -q)
 ```
 docker rmi <image name>
 
+```
 ### delete all images
-
+```
 docker rmi $(docker images -a -q)
 ```
 ### attach to container
